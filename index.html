@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="bs">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spomenici</title>
   <link rel="stylesheet" href="css/tptpstil.css">
 </head>
+
 <body>
-  <header>
-    <div>
+
+  <header class="site-header">
+    <div class="header-inner">
       <a href="./index.html" title="Početna stranica">
         <span>Spomenici BiH</span>
       </a>
-      <nav>
-        <ul>
+      <nav class="glavniNav">
+        <ul class="glavniNav_list">
           <li><a href="./index.html">Početna</a></li>
           <li><a href="./sadrzaj.html">Sadržaj</a></li>
           <li><a href="./kontakt.html">Kontakt</a></li>
@@ -23,135 +26,135 @@
     </div>
   </header>
 
-  <div>
-    <nav>
-      <h2>Kategorije</h2>
-      <ul>
-        <li><a href="#">Sve lokacije</a></li>
-        <li><a href="#">UNESCO / svjetska baština</a></li>
-        <li><a href="#">Mostovi i infrastruktura</a></li>
-        <li><a href="#">Utvrđenja i stari gradovi</a></li>
-        <li><a href="#">Sakralna arhitektura</a></li>
-        <li><a href="#">Muzeji i memorijali</a></li>
+  <!-- TPTP: lijevo sekundarni nav (filter), sredina div, desno aside s mapom -->
+  <div class="layout">
+    <nav class="se">
+      <h2 class="se_title">Kategorije</h2>
+      <ul class="navList">
+        <li><a href="#" class="navElement">Sve lokacije</a></li>
+        <li><a href="#" class="navElement">UNESCO / svjetska baština</a></li>
+        <li><a href="#" class="navElement">Mostovi i infrastruktura</a></li>
+        <li><a href="#" class="navElement">Utvrđenja i stari gradovi</a></li>
+        <li><a href="#" class="navElement">Sakralna arhitektura</a></li>
+        <li><a href="#" class="navElement">Muzeji i memorijali</a></li>
       </ul>
     </nav>
 
     <div>
-      <section>
-        <picture>
-          <img src="images/his.jpg" alt="Historija.png" width="1200" height="480">
+      <section class="gKartica">
+        <picture class="gKartica_picture">
+          <img class="gKartica_img" src="images/his.jpg" alt="Historija.png" width="1200" height="480">
         </picture>
-        <div>
+        <div class="gKartica_content">
           <h1><em>Historijski spomenici u Bosni i Hercegovini</em></h1>
-          <p>
+          <p class="gKartica_lead">
             Od srednjovjekovnih utvrda do osmanske arhitekture — kratki uvod u baštinu koju možete upoznati
             kroz kartice ispod.
           </p>
         </div>
       </section>
 
-      <section>
-        <h2 id="kartice-naslov"><em>Odabrane lokacije</em></h2>
-        <div id="kartice-container">
+      <section class="kartice-section">
+        <h2 id="kartice-naslov" class="section-title"><em>Odabrane lokacije</em></h2>
+        <div class="kartice-grid" id="kartice-container">
 
-          <article>
-            <a href="./sadrzaj.html#placeholder-bobovac">
-              <img src="images/bobovac.jpg" alt="Bobovac" width="640" height="400" loading="lazy">
+          <article class="kartica">
+            <a class="kartica_media" href="./sadrzaj.html#placeholder-bobovac">
+              <img class="kartica_img" src="images/bobovac.jpg" alt="Bobovac" width="640" height="400" loading="lazy">
             </a>
-            <div>
-              <h3><em>Stari grad Bobovac</em></h3>
-              <p>
+            <div class="kartica_body">
+              <h3 class="kartica_title"><em>Stari grad Bobovac</em></h3>
+              <p class="kartica_desc">
                 Bobovac je bio srednjovjekovno kraljevsko utvrđenje i jedno od najvažnijih
                 sjedišta bosanskih vladara. Smješten na nepristupačnom brdu, imao je ključnu stratešku ulogu u odbrani
-                Bosanskog kraljevstva.
-              </p>
-              <a href="./sadrzaj.html#bobovac">Detalji</a>
+                Bosanskog kraljevstva.</p>
+              <a class="kartica_link" href="./sadrzaj.html#bobovac">Detalji</a>
             </div>
           </article>
 
-          <article>
-            <a href="./sadrzaj.html#placeholder-gazi">
-              <img src="images/ghb.jpg"
+          <article class="kartica">
+            <a class="kartica_media" href="./sadrzaj.html#placeholder-gazi">
+              <img class="kartica_img" src="images/ghb.jpg"
                 alt="Placeholder slike: Gazi Husrev-begova džamija ili kompleks u Sarajevu." width="640" height="400"
                 loading="lazy">
             </a>
-            <div>
-              <h3><em>Gazi Husrev-begov kompleks</em></h3>
-              <p>
-                Gazi Husrev-begov kompleks predstavlja jedno od najvažnijih osmanskih arhitektonskih
+            <div class="kartica_body">
+              <h3 class="kartica_title"><em>Gazi Husrev-begov kompleks</em></h3>
+              <p class="kartica_desc">Gazi Husrev-begov kompleks predstavlja jedno od najvažnijih osmanskih
+                arhitektonskih
                 i kulturnih cjelina u Sarajevu. Izgrađen u 16. stoljeću, kompleks je centar vjerskog, obrazovnog i
                 društvenog života grada već gotovo pet stoljeća. U njegovom sklopu nalaze se džamija, medresa,
-                biblioteka i bezistan, što ga čini jedinstvenim urbanim ansamblom.
-              </p>
-              <a href="./sadrzaj.html#dzamija">Detalji</a>
+                biblioteka i bezistan, što ga čini jedinstvenim urbanim ansamblom. </p>
+              <a class="kartica_link" href="./sadrzaj.html#dzamija">Detalji</a>
             </div>
           </article>
 
-          <article>
-            <a href="./sadrzaj.html#placeholder-mostar">
-              <img src="images/kula.jpg"
+          <article class="kartica">
+            <a class="kartica_media" href="./sadrzaj.html#placeholder-mostar">
+              <img class="kartica_img" src="images/kula.jpg"
                 alt="Placeholder slike: Stari most u Mostaru (UNESCO). Ubacite vlastitu fotografiju u images/."
                 width="640" height="400" loading="lazy">
             </a>
-            <div>
-              <h3><em>Kula u Srebreniku</em></h3>
-              <p>
+            <div class="kartica_body">
+              <h3 class="kartica_title"><em>Kula u Srebreniku</em></h3>
+              <p class="kartica_desc">
                 Kula u Srebreniku je srednjovjekovna utvrda iz 13. stoljeća smještena na strmoj stijeni iznad doline
                 rijeke Tinje, izgrađena radi odbrane i kontrole važnih trgovačkih puteva. Zbog svog položaja i očuvanih
                 zidina spada među najznačajnije primjere srednjovjekovne fortifikacijske arhitekture u Bosni i
                 Hercegovini.
               </p>
-              <a href="./sadrzaj.html#srebrenik">Detalji</a>
+              <a class="kartica_link" href="./sadrzaj.html#srebrenik">Detalji</a>
             </div>
           </article>
 
-          <article>
-            <a href="./sadrzaj.html#placeholder-visegrad">
-              <img src="images/latc.jpg"
+          <article class="kartica">
+            <a class="kartica_media" href="./sadrzaj.html#placeholder-visegrad">
+              <img class="kartica_img" src="images/latc.jpg"
                 alt="Placeholder slike: Mehmed-paša Sokolović most u Višegradu." width="640" height="400"
                 loading="lazy">
             </a>
-            <div>
-              <h3><em>Latinska ćuprija</em></h3>
-              <p>
+            <div class="kartica_body">
+              <h3 class="kartica_title"><em>Latinska ćuprija</em></h3>
+              <p class="kartica_desc">
                 Latinska ćuprija je kameni most iz osmanskog perioda koji spaja dvije obale rijeke Miljacke u starom
                 dijelu Sarajeva. U njegovoj neposrednoj blizini 1914. godine izvršen je atentat na nadvojvodu Franju
                 Ferdinanda, događaj koji je označio početak Prvog svjetskog rata.
               </p>
-              <a href="./sadrzaj.html#cuprija">Detalji</a>
+              <a class="kartica_link" href="./sadrzaj.html#cuprija">Detalji</a>
             </div>
           </article>
 
-          <article>
-            <a href="./sadrzaj.html#placeholder-pocitelj">
-              <img src="images/tekija.jpg" alt="Placeholder slike: historijsko naselje Počitelj."
+          <article class="kartica">
+            <a class="kartica_media" href="./sadrzaj.html#placeholder-pocitelj">
+              <img class="kartica_img" src="images/tekija.jpg" alt="Placeholder slike: historijsko naselje Počitelj."
                 width="640" height="400" loading="lazy">
             </a>
-            <div>
-              <h3><em>Tekija u Blagaju</em></h3>
-              <p>
+            <div class="kartica_body">
+              <h3 class="kartica_title"><em>Tekija u Blagaju</em></h3>
+              <p class="kartica_desc">
                 Blagajska tekija je derviški kompleks iz osmanskog perioda smješten u podnožju stijene kod izvora rijeke
                 Bune. Izgrađena je u 16. stoljeću kao mjesto okupljanja i duhovnog života pripadnika sufijskog reda.
                 Tekija predstavlja spoj osmanske arhitekture i prirodnog ambijenta, što joj daje poseban kulturni i
                 historijski značaj.
               </p>
-              <a href="./sadrzaj.html#blagaj">Detalji</a>
+              <a class="kartica_link" href="./sadrzaj.html#blagaj">Detalji</a>
             </div>
           </article>
 
-          <article>
-            <a href="./sadrzaj.html#placeholder-tunel">
-              <img src="images/sarajevo.jpg"
+
+
+          <article class="kartica">
+            <a class="kartica_media" href="./sadrzaj.html#placeholder-tunel">
+              <img class="kartica_img" src="images/sarajevo.jpg"
                 alt="Placeholder slike: Tunel spasa / muzej u Sarajevu." width="640" height="400" loading="lazy">
             </a>
-            <div>
-              <h3><em>Vijećnica Sarajevo</em></h3>
-              <p>
-                Vijećnica Sarajevo je monumentalna građevina iz austrougarskog perioda, izgrađena
+            <div class="kartica_body">
+              <h3 class="kartica_title"><em>Vijećnica Sarajevo</em></h3>
+              <p class="kartica_desc">Vijećnica Sarajevo je monumentalna građevina iz austrougarskog perioda, izgrađena
                 krajem 19. stoljeća u pseudo-maurskom stilu. Prvobitno je služila kao gradska uprava i biblioteka, a
                 danas je jedan od najprepoznatljivijih simbola Sarajeva.
               </p>
-              <a href="./sadrzaj.html#vijecnica">Detalji</a>
+              <a class="kartica_link" href="./sadrzaj.html#vijecnica">Detalji</a>
             </div>
           </article>
         </div>
@@ -159,9 +162,9 @@
     </div>
 
     <aside>
-      <nav aria-labelledby="se-title">
-        <h2 id="se_title">Karta</h2>
-        <div>
+      <nav class="se" aria-labelledby="se-title">
+        <h2 id="se_title" class="se_title">Karta</h2>
+        <div class="map-embed">
           <iframe title="Karta Bosne i Hercegovine"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=Bobovac&amp;maptype=roadmap&amp;zoom=14"
             width="600" height="320" allowfullscreen="" loading="lazy"
@@ -171,12 +174,13 @@
     </aside>
   </div>
 
-  <footer style="text-align: center;">
-    <div>
-      <p>
+  <footer class="site-footer" style="text-align: center;">
+    <div class="footer-inner">
+      <p class="footer__authors">
         <em> | Stundent 1 | Student 2 | Student 3 | </em>
       </p>
     </div>
   </footer>
 </body>
+
 </html>
