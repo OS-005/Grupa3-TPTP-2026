@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ba">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sadržaj</title>
   <link href="css/tptpstil.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div>
+
+  <header class="site-header">
+    <div class="header-inner">
       <a href="./index.html" title="Početna stranica">
         <span>Spomenici BiH</span>
       </a>
-      <nav>
-        <ul>
+      <nav class="glavniNav">
+        <ul class="glavniNav_list">
           <li><a href="./index.html">Početna</a></li>
           <li><a href="./sadrzaj.html">Sadržaj</a></li>
           <li><a href="./kontakt.html">Kontakt</a></li>
@@ -23,24 +26,26 @@
     </div>
   </header>
 
-  <div>
-    <nav>
-      <h2>Saznaj više</h2>
-      <ul>
-        <li><a href="https://hr.wikipedia.org/wiki/Bobovac">Stari grad Bobovac</a></li>
-        <li><a href="https://bs.wikipedia.org/wiki/Gazi_Husrev-begova_d%C5%BEamija">Gazi Husrev-begov kompleks</a></li>
-        <li><a href="https://bs.wikipedia.org/wiki/Tvr%C4%91ava_Srebrenik">Kula u Srebreniku</a></li>
-        <li><a href="https://bs.wikipedia.org/wiki/Latinska_%C4%87uprija">Latinska ćuprija</a></li>
-        <li><a href="https://bs.wikipedia.org/wiki/Tekija_u_Blagaju">Tekija u Blagaju</a></li>
-        <li><a href="https://bs.wikipedia.org/wiki/Sarajevska_vije%C4%87nica">Vijećnica Sarajevo</a></li>
+  <div class="layout">
+    <nav class="se">
+      <h2 class="se_title">Saznaj više</h2>
+      <ul class="navList">
+        <li><a href="https://hr.wikipedia.org/wiki/Bobovac" class="navElement">Stari grad Bobovac</a></li>
+        <li><a href="https://bs.wikipedia.org/wiki/Gazi_Husrev-begova_d%C5%BEamija" class="navElement">Gazi Husrev-begov
+            kompleks</a></li>
+        <li><a href="https://bs.wikipedia.org/wiki/Tvr%C4%91ava_Srebrenik" class="navElement">Kula u Srebreniku</a></li>
+        <li><a href="https://bs.wikipedia.org/wiki/Latinska_%C4%87uprija" class="navElement">Latinska ćuprija</a></li>
+        <li><a href="https://bs.wikipedia.org/wiki/Tekija_u_Blagaju" class="navElement">Tekija u Blagaju</a></li>
+        <li><a href="https://bs.wikipedia.org/wiki/Sarajevska_vije%C4%87nica" class="navElement">Vijećnica Sarajevo</a>
+        </li>
       </ul>
     </nav>
 
     <main>
-      <section>
-        <div>
+      <section class="gKartica">
+        <div class="gKartica_content">
           <h1><em>Kontakt</em></h1>
-          <p>
+          <p class="gKartica_lead">
             Ako imate prijedlog za novi spomenik, ispravku historijskih podataka ili tehnički problem na stranici,
             pošaljite poruku putem obrasca. Tim projekta "Spomenici BiH" redovno pregledava upite i odgovara u
             najkraćem mogućem roku.
@@ -48,7 +53,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="forma">
         <form>
           <input type="text" placeholder="Ime" autofocus>
           <input type="text" placeholder="Prezime">
@@ -65,7 +70,7 @@
             <option>Tehnička pitanja</option>
           </select>
           <textarea placeholder="Poruka"></textarea>
-          <div>
+          <div class="akcije">
             <button type="submit">Pošalji</button>
             <button type="reset">Reset</button>
           </div>
@@ -74,8 +79,8 @@
     </main>
 
     <aside>
-      <nav>
-        <h2>Karta lokacija</h2>
+      <nav class="se">
+        <h2 class="se_title">Karta lokacija</h2>
         <p>Prikaz lokacija iz kartica.</p>
         <div>
           <iframe title="Karta lokacija u BiH"
@@ -87,10 +92,14 @@
     </aside>
   </div>
 
-  <footer>
+  <footer class="site-footer">
     <div>
-      <p><em> | Stundent 1 | Student 2 | Student 3 | </em></p>
+      <p>
+        <em> | Stundent 1 | Student 2 | Student 3 | </em>
+      </p>
     </div>
   </footer>
+
 </body>
+
 </html>
