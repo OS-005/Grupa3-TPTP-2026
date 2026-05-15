@@ -266,6 +266,50 @@ a {
   text-align: center;
 }
 
+.kartice-gridv2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Popraviti naziv klase */
+.pregled {
+  max-width: 1580px;
+  margin-inline: auto;
+  padding: 1.75rem;
+}
+
+.pregled-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  background: #faf8f3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.pregled-tabela thead th {
+  background: #a0522d;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font: 1rem Georgia, "Times New Roman", serif;
+}
+
+.pregled-tabela tbody td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #dcd3c4;
+}
+
+.pregled-tabela tbody tr:nth-child(even) {
+  background: #f3efe6;
+}
+
+.pregled-tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
 /* Responzivnost stranice (doradit) */
 
 @media (max-width: 599px) {
