@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="bs">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sadrzaj</title>
   <link rel="stylesheet" href="css/tptpstil.css">
 </head>
+
 <body>
-  <header>
-    <div>
+
+  <header class="site-header">
+    <div class="header-inner">
       <a href="./index.html" title="Početna stranica">
         <span>Spomenici BiH</span>
       </a>
-      <nav>
-        <ul>
+      <nav class="glavniNav">
+        <ul class="glavniNav_list">
           <li><a href="./index.html">Početna</a></li>
           <li><a href="./sadrzaj.html">Sadržaj</a></li>
           <li><a href="./kontakt.html">Kontakt</a></li>
@@ -23,8 +26,13 @@
     </div>
   </header>
 
-  <div>
-    <aside>
+
+
+  <!-- Trokolonski layout -->
+  <div class="layout">
+
+    <!-- Lijevo: navigacijski sadržaj -->
+    <aside class="se">
       <h2>Sadržaj</h2>
       <ul>
         <li>
@@ -51,74 +59,164 @@
       </ul>
     </aside>
 
+    <!-- Sredina: 6 kartica -->
     <main>
-      <div>
-        <div>
-          <h2 id="bobovac">Bobovac</h2>
-          <p><b>Bobovac</b> je najznačajniji i najbolje utvrđeni grad u srednjovjekovnoj Bosni.</p>
+      <div class="kartice-gridv2">
+        <div class="kartica">
+          <h2 id="bobovac" class="kartica_body kartica_title">Bobovac</h2>
+          <p class="kartica_body" style="text-align: justify;"><b>Bobovac</b> je najznačajniji i najbolje utvrđeni grad
+            u srednjovjekovnoj Bosni podignut na
+            strmoj, stubastoj stijeni južnih padina planinskoga masiva Dragovskih i Mijakovskih poljica.
+            Nalazi se nedaleko od sela Mijakovići i Dragovići, u općini Vareš. Gradu se može prići iz
+            dvaju smjerova, i to od <b>Kraljeve Sutjeske</b> ili od <b>Vareša</b>. Sastojao se od gornjega grada s
+            četvrtastom kulom i donjega grada mnogokutna oblika, od čega se danas raspoznaje
+            dvorište i zdenac. <b>Kraljevska grobna kapela</b> je rekonstruirana i danas se tu nalazi
+            mauzolej dinastije Kotromanića. Od 2001. godine na spomendan blažene kraljice
+            <b>Katarine</b> (25. listopada) tradicijski se hodočasti na Bobovac.
+          </p>
           <hr>
-          <h2>Uspon kraljevskog stolnog mjesta</h2>
-          <p><b>Bobovac</b> je podigao ban Stjepan II. Kotromanić i bio je ključni centar bosanskih vladara.</p>
+          <h2 id=" bobovac" class="kartica_body kartica_title">Uspon kraljevskog stolnog mjesta</h2>
+          <p class="kartica_body" style="text-align: justify;""><b>Bobovac</b> je podigao ban Stjepan II. Kotromanić u prvoj polovici 14. stoljeća, a prvi pisani
+trag o gradu datira iz <b>1349. godine</b>. Kroz povijest su ga dograđivali kraljevi <i>Ostoja, Tvrtko II. i
+Tomaš</i>, čime je postao ključno sjedište bosanskih vladara. Zbog vrhunskog <b>strateškog
+položaja</b> i moćnih zidina, Bobovac je bio glavno vojno uporište u kojem se čuvala
+<b>kraljevska kruna</b>, dok je obližnja <i>Kraljeva Sutjeska</i> služila više u administrativne svrhe. U
+samom srcu grada nalazila se stara crkva preuređena u <b>kraljevsku grobnu kapelu</b>. U njoj
+počivaju tri bosanska kralja: <i>Stjepan Ostoja, Tvrtko II. i Stjepan Tomaš</i>, kao i kraljice <b>Kujava
+i Doroteja</b>. Upravo ta kapela svjedoči o Bobovcu kao duhovnom i političkom središtu
+srednjovjekovne Bosne.</p>
         </div>
 
-        <div>
-          <h2 id="dzamija">Gazi Husrev-begova džamija</h2>
-          <p>Najznačajniji je spomenik sakralne islamske arhitekture na Balkanu, izgrađena 1531. godine.</p>
+        <div class=" kartica">
+          <h2 class="kartica_body kartica_title" id="dzamija">Gazi Husrev-begova džamija</h2>
+          <p class="kartica_body" style="text-align: justify;"><b>Gazi Husrev-begova džamija</b>, poznata i kao Begova
+            džamija, najznačajniji je spomenik
+            sakralne islamske arhitekture na Balkanu. Izgrađena je <b>1531. godine</b> u samom srcu
+            Sarajeva kao zadužbina bosanskog sandžak-bega Gazi Husrev-bega. Projektovao ju je
+            <b>Adžem Esir Ali</b>, glavni arhitekt Osmanskog carstva tog vremena, a zbog svoje
+            monumentalnosti i ljepote od 2004. godine proglašena je nacionalnim spomenikom Bosne
+            i Hercegovine.
+          </p>
           <hr>
-          <h2>Arhitektonske specifičnosti i inovacije</h2>
-          <p>Prepoznatljiva je po centralnoj kupoli i visokoj munari, te historijskom značaju za Sarajevo.</p>
+          <h2 class="kartica_body kartica_title" id="ghb">Arhitektonske specifičnosti i inovacije</h2>
+          <p class="kartica_body" style="text-align: justify;">Džamija je kvadratnog oblika s centralnom kupolom
+            prečnika <b>13 metara</b> i visinom od <b>26
+              metara</b>. Njena unutrašnjost zrači posebnom umjetničkom atmosferom, a vanjskim
+            izgledom dominira vitka <b>munara</b> visoka <i>47 metara</i>. Fascinantan je podatak da je ovo bila
+            prva džamija na svijetu koja je dobila <b>električno osvjetljenje</b>, još davne <i>1898. godine</i>, što
+            je u to vrijeme bio ogroman tehnološki iskorak za cijeli region.
         </div>
 
-        <div>
-          <h2 id="srebrenik">Tvrđava Srebrenik</h2>
-          <p>Najočuvanija srednjovjekovna utvrda u Bosni i Hercegovini.</p>
+        <div class="kartica">
+          <h2 class="kartica_title kartica_body" id="srebrenik">Tvrđava Srebrenik</h2>
+          <p class="kartica_body" style="text-align: justify;"><b>Tvrđava Srebrenik</b> najočuvanija je srednjovjekovna
+            utvrda
+            u Bosni i Hercegovini,
+            smještena na sjeveroistočnim obroncima <b>planine Majevice</b>. Podignuta na stijeni visokoj
+            do 70 metara, ova tvrđava dominira okolinom i potpuno je odvojena od matičnog grebena
+            dubokim prokopom. Pristup ovom <b>nacionalnom spomeniku</b> moguć je isključivo preko
+            mosta, što Srebrenik čini jednim od najfascinantnijih prizora domaće arhitekture.</p>
           <hr>
-          <h2>Strateška važnost i arhitektura</h2>
-          <p>Srebrenik je kroz historiju imao važnu vojnu ulogu na sjeveru Bosne.</p>
+          <h2 class="kartica_title kartica_body" id="tsr">Strateška važnost i arhitektura</h2>
+          <p class="kartica_body" style="text-align: justify;">Prvi spomen utvrde veže se uz povelju bana Stjepan II.
+            Kotromanića iz <i>1333. godine</i>.
+            Srebrenik je građen u jednom potezu i sastoji se od <b>četiri kule</b>, cisterne i stambene zgrade
+            s podrumom. Zbog važnih vojnih putova, grad je bio poprište stalnih sukoba s <i>Ugarskom</i>, a
+            mađarski kraljevi su ga tijekom povijesti zauzimali nekoliko puta, koristeći ga kao ključno
+            <b>uporište na sjeveru</b>.
         </div>
 
-        <div>
-          <h2 id="cuprija">Latinska ćuprija</h2>
-          <p>Jedan od najstarijih kamenih mostova u Sarajevu i značajan historijski simbol grada.</p>
+        <div class="kartica">
+          <h2 class="kartica_title kartica_body" id="cuprija">Latinska ćuprija</h2>
+          <p class="kartica_body" style="text-align: justify;"><b>Latinska ćuprija</b> jedan je od najprepoznatljivijih
+            simbola
+            Sarajeva i ujedno jedan od
+            <b>najstarijih kamenih mostova</b> u gradu. Prvi put se spominje 1541. godine, kada je prvobitni
+            most vjerojatno bio drvene građe, dok zapis iz <b>1565. godine</b> potvrđuje da je na tom mjestu
+            izgrađen kameni most. Zbog svog povijesnog značaja i arhitektonske vrijednosti, uvršten je
+            na popis Nacionalnih spomenika Bosne i Hercegovine. Naziv je dobio po obližnjoj
+            <b>Latinskoj mahali</b>, četvrti u kojoj su mahom živjeli katolici, trgovci i majstori iz Dubrovnika.
+          </p>
           <hr>
-          <h2>Povijest obnova i arhitektonske promjene</h2>
-          <p>Most je više puta obnavljan nakon poplava i prilagođavan kroz različite epohe.</p>
+          <h2 class="kartica_title kartica_body" id="latc">Povijest obnova i arhitektonske promjene</h2>
+          <p class="kartica_body" style="text-align: justify;">Kroz stoljeća, most je tri puta značajno oštećen u
+            velikim poplavama, osobito <b>1791.
+              godine</b>, nakon čega je šest godina bio izvan funkcije. Današnji izgled mosta rezultat je
+            obnove s kraja 18. stoljeća, koju je financirao <b>Hadži Abdulah Briga</b>. Most je izvorno imao
+            četiri stupa s pet lukova, no tijekom regulacije <i>Miljacke</i> za vrijeme austrougarske uprave,jedan je
+            stup zazidan. Tom prilikom most je proširen <b>nogostupom</b>, a stare vapnenačke
+            ploče zamijenjene su čvršćim <i>granitnim</i>.</p>
         </div>
 
-        <div>
-          <h2 id="blagaj">Tekija u Blagaju</h2>
-          <p>Smještena uz izvor Bune, predstavlja spoj prirodne ljepote i sakralne arhitekture.</p>
+        <div class="kartica">
+          <h2 class="kartica_title kartica_body" id="blagaj">Tekija u Blagaju</h2>
+          <p class="kartica_body" style="text-align: justify;"><b>Tekija u Blagaju</b> nalazi se na samom izvoru
+            <b>rijeke Bune</b>, nedaleko od
+            Mostara, i
+            predstavlja jedan od najvrijednijih sakralno-stambenih objekata islamske arhitekture u
+            Bosni i Hercegovini. Ovaj objekt specifičan je po izraženim odlikama <b>osmanskog baroka</b>, a
+            zbog svoje povijesne važnosti 2003. godine proglašen je nacionalnim spomenikom. Cijeli
+            ambijent vrela Bune, s visokim liticama koje su istovremeno i dio same građevine, čini ovaj
+            lokalitet neraskidivim spojem <b>prirodne ljepote i sakralne tradicije.</b>
+          </p>
           <hr>
-          <h2>Povijest i derviška tradicija</h2>
-          <p>Tekija je stoljećima bila duhovno središte derviških redova i važan kulturni lokalitet.</p>
+          <h2 class="kartica_title kartica_body" id="tekbl">Povijest i derviška tradicija</h2>
+          <p class="kartica_body" style="text-align: justify;">Sufizam, kao duhovni pravac koji korijene vuče iz života
+            poslanika Muhameda, u Bosni se
+            manifestirao kroz izgradnju ovakvih objekata, a <b>blagajska tekija</b> podignuta je najkasnije
+            oko 1520. godine. Kroz stoljeća je bila središte derviških redova, prvo bektijaša, a potom
+            <b>halvetija</b>. Objekt je često stradao zbog <b>odronjavanja stijena</b> iznad samog izvora, pa je
+            značajno obnavljan 1851. godine po nalogu Omer-paše Latasa, dok je današnji izgled
+            rezultat opsežnih restauracija iz 1950-ih godina kojima je vraćen dojam starine uz
+            korištenje <b>autentičnih materijala</b>.
+          </p>
         </div>
 
-        <div>
-          <h2 id="vijecnica">Vijećnica u Sarajevu</h2>
-          <p>Najpoznatiji objekt austrougarskog perioda u BiH, građen u pseudomaurskom stilu.</p>
+        <div class="kartica">
+          <h2 class="kartica_title kartica_body" id="vijecnica">Vijećnica u Sarajevu</h2>
+          <p class="kartica_body" style="text-align: justify;"><b>Sarajevska vijećnica</b> je najreprezentativniji
+            objekt iz austrougarskog perioda u Bosni i
+            Hercegovini, izgrađen u upečatljivom <b>pseudomaurskom stilu</b>. Prve nacrte radio je Karlo
+            Paržik, ali je konačni projekt osmislio <b>Alexander Wittek</b>, kojemu je kao uzor poslužila
+            džamija Kemala II u Kairu. Gradnja je trajala od 1892. do 1894. godine, a objekt je službeno
+            predan na upotrebu <b>1896. godine</b>. Vijećnica je kroz povijest bila sjedište gradske uprave,
+            suda i sabora, da bi 1949. postala dom <b>Nacionalne i univerzitetske biblioteke</b>.</p>
           <hr>
-          <h2>Razaranje i čin memoricida</h2>
-          <p>Tokom 1992. godine Vijećnica je teško oštećena, a veliki dio bibliotečkog fonda uništen.</p>
+          <h2 class="kartica_title kartica_body" id="svj">Razaranje i čin memoricida</h2>
+          <p class="kartica_body" style="text-align: justify;">Tokom opsade Sarajeva, u noći sa <b>25. na 26. august
+              1992. godine</b>, Vijećnica je granatirana
+            i zapaljena. U stravičnom požaru nepovratno je uništeno oko 80% knjižnog fonda,
+            uključujući preko dva milijuna knjiga, časopisa i <b>700 unikatnih rukopisa</b>. Ovaj tragični
+            događaj, u kojem su građani i bibliotekari pod snajperskom paljbom pokušavali spasiti
+            nacionalno blago, pisac Juan Goytisolo nazvao je <b>memoricidom</b> - namjernim
+            uništavanjem kolektivnog sjećanja jednog naroda.</p>
         </div>
       </div>
     </main>
 
-    <aside>
-      <img src="/images/mscroll.png" usemap="#image-map" alt="Historijski periodi">
+    <!-- Desno: TBA box -->
+    <aside class="se">
+      <img src="/images/mscroll.png" usemap="#image-map">
+
       <map name="image-map">
-        <area alt="Srednjovijekovna Bosna" title="Srednjovijekovna Bosna"
-          href="https://bs.wikipedia.org/wiki/Bosna_i_Hercegovina_u_srednjem_vijeku" coords="185,111,401,148" shape="rect">
-        <area alt="Osmanski period" title="Osmanski period"
-          href="https://bs.wikipedia.org/wiki/Bosna_i_Hercegovina_u_Osmanskom_Carstvu" coords="198,170,370,216" shape="rect">
-        <area alt="Austrogarski period" title="Austrogarski period"
-          href="https://bs.wikipedia.org/wiki/Bosna_i_Hercegovina_u_Austro-Ugarskoj" coords="198,245,386,282" shape="rect">
+        <area target="" alt="Srednjovijekovna Bosna" title="Srednjovijekovna Bosna"
+          href="https://bs.wikipedia.org/wiki/Bosna_i_Hercegovina_u_srednjem_vijeku" coords="185,111,401,148"
+          shape="rect">
+        <area target="" alt="Osmanski period" title="Osmanski period"
+          href="https://bs.wikipedia.org/wiki/Bosna_i_Hercegovina_u_Osmanskom_Carstvu" coords="198,170,370,216"
+          shape="rect">
+        <area target="" alt="Austrogarski period" title="Austrogarski period"
+          href="https://bs.wikipedia.org/wiki/Bosna_i_Hercegovina_u_Austro-Ugarskoj" coords="198,245,386,282"
+          shape="rect">
       </map>
     </aside>
+
   </div>
 
-  <div>
+  <!-- Popraviti naziv klase  -->
+  <div class="pregled">
     <h2>Pregled odabranih spomenika</h2>
-    <table>
+    <table class="pregled-tabela">
       <thead>
         <tr>
           <th>Naziv</th>
@@ -128,20 +226,55 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>Bobovac</td><td><em>Vareš</em></td><td>Srednji vijek</td><td>Sjedište bosanskih kraljeva</td></tr>
-        <tr><td>Tvrđava Srebrenik</td><td>Srebrenik</td><td>Srednji vijek</td><td>Najbolje očuvana srednjovjekovna utvrda</td></tr>
-        <tr><td>Tekija u Blagaju</td><td>Mostar</td><td>Osmanski period</td><td>Centar derviškog kulta (sufizam)</td></tr>
-        <tr><td>Gazi Husrev-begova džamija</td><td>Sarajevo</td><td>Osmanski period</td><td>Najznačajniji sakralni objekat u BiH</td></tr>
-        <tr><td>Vijećnica</td><td>Sarajevo</td><td>Austro-ugarski period</td><td>Simbol grada i susreta kultura</td></tr>
-        <tr><td>Latinska ćuprija</td><td>Sarajevo</td><td>Austro-ugarski period</td><td>Lokacija Sarajevskog atentata</td></tr>
+        <tr>
+          <td>Bobovac</td>
+          <td><em>Vareš</em></td>
+          <td>Srednji vijek</td>
+          <td>Sjedište bosanskih kraljeva</td>
+        </tr>
+        <tr>
+          <td>Tvrđava Srebrenik</td>
+          <td>Srebrenik</td>
+          <td>Srednji vijek</td>
+          <td>Najbolje očuvana srednjovjekovna utvrda</td>
+        </tr>
+        <tr>
+          <td>Tekija u Blagaju</td>
+          <td>Mostar</td>
+          <td>Osmanski period</td>
+          <td>Centar derviškog kulta (sufizam)</td>
+        </tr>
+        <tr>
+          <td>Gazi Husrev-begova džamija</td>
+          <td>Sarajevo</td>
+          <td>Osmanski period</td>
+          <td>Najznačajniji sakralni objekat u BiH</td>
+        </tr>
+        <tr>
+          <td>Vijećnica</td>
+          <td>Sarajevo</td>
+          <td>Austro-ugarski period</td>
+          <td>Simbol grada i susreta kultura</td>
+        </tr>
+        <tr>
+          <td>Latinska ćuprijaaa</td>
+          <td>Sarajevo</td>
+          <td>Austro-ugarski period</td>
+          <td>Lokacija Sarajevskog atentata</td>
+        </tr>
       </tbody>
     </table>
   </div>
 
-  <footer>
+  <footer class="site-footer" style="text-align: center;">
     <div>
-      <p><em> | Stundent 1 | Student 2 | Student 3 | </em></p>
+      <p>
+        <em> | Stundent 1 | Student 2 | Student 3 |
+        </em>
+      </p>
     </div>
   </footer>
+
 </body>
+
 </html>
