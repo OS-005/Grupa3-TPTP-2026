@@ -310,6 +310,114 @@ a {
   border-bottom: none;
 }
 
+.forma {
+  background: #faf8f3;
+  border: 1px solid #dcd3c4;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding: 1.75rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.forma form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Inputi, select i textarea */
+
+.forma input,
+.forma select,
+.forma textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #dcd3c4;
+  border-radius: 10px;
+  background: #fff;
+  color: #1a1511;
+  font: inherit;
+  box-sizing: border-box;
+  transition:
+    border-color 0.5s ease,
+    box-shadow 0.5s ease,
+    background 0.5s ease;
+}
+
+/* Placeholder */
+
+.forma input::placeholder,
+.forma textarea::placeholder {
+  color: #5e574d;
+}
+
+/* Fokus */
+
+.forma input:focus,
+.forma select:focus,
+.forma textarea:focus {
+  outline: none;
+  border-color: #a0522d;
+  box-shadow: 0 0 0 4px color-mix(in srgb, #a0522d 18%, transparent);
+}
+
+/* Textarea */
+
+.forma textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+/* Dugmad */
+
+.akcije {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.akcije button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.8rem 1.4rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.5s ease,
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+/* Submit */
+
+.akcije button[type="submit"] {
+  background: #a0522d;
+  color: #fff;
+}
+
+.akcije button[type="submit"]:hover {
+  background: #7d3d20;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset */
+
+.akcije button[type="reset"] {
+  background: #f3efe6;
+  color: #1a1511;
+  border: 1px solid #dcd3c4;
+}
+
+.akcije button[type="reset"]:hover {
+  background: #e7dfd2;
+  transform: translateY(-2px);
+}
+
 /* Responzivnost stranice (doradit) */
 
 @media (max-width: 599px) {
